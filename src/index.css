@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.nav {
+  background: rgba(255, 255, 255, 0.3); /* Default background */
+ 
+  
+  color: #000; /* Text color */
+ 
+  text-align: center; /* Center the text */
+  transition: background 0.4s ease, transform 0.3s ease; /* Smooth transition */
+  cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+.nav:hover {
+  
+  color: rgba(168, 85, 247, 0.8); /* Change text color to white on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  
+}
+
+.Home {
+   font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.Home2 {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.glass-div {
+  width: 95vw;
+  height: fit;
+  
+  /* border-radius: 15px; */
+background-color: rgba(255, 255, 255, 0.3);;
+  backdrop-filter: blur(15px); /* Frosted glass effect */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  
+  
+}
+
+
+
+
+.blurred-ball {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(50px); /* Adjust for strong blur */
+  opacity: 0.9; /* Adjust opacity for visibility */
+  animation: moveBall 10s infinite alternate;
+}
+
+/* Colors and initial positioning of each ball */
+.ball1 {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(99, 102, 241, 0.8); /* Indigo */
+  top: 50px;
+  left: 50px;
+}
+
+.ball2 {
+  width: 180px;
+  height: 180px;
+  background-color: rgba(168, 85, 247, 0.8); /* Purple */
+  top: 50px;
+  right: -50px;
+}
+
+.ball3 {
+  width: 220px;
+  height: 220px;
+  background-color: rgba(236, 72, 153, 0.8); /* Pink */
+  bottom: -50px;
+  left: 50px;
+}
+
+/* Animation for the floating effect */
+@keyframes moveBall {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(50px, -30px);
+  }
+  100% {
+    transform: translate(-30px, 50px);
+  }
+}
+.react-flow {
+  cursor: default !important; /* Forces the arrow cursor */
+}
+
+
+.gradient {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #6366f1, #a855f7, #ec4899, #6366f1);
+  background-size: 200% 200%;
+  animation: cycleGradient 15s linear infinite;
+  z-index: 1;
+  opacity: 0.8; /* Adjust for visibility */
+}
+
+/* Keyframes for a smooth, cycling gradient animation */
+@keyframes cycleGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
