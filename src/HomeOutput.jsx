@@ -67,11 +67,11 @@ const settings = {
           </p>
           <div className=" h-[10vh] mt-10   ">
             <Slider {...settings}>
-              <div className="text-black  p-1 ">React</div>
-              <div>React Native</div>
-              <div>Tailwind</div>
-              <div>Material UI</div>
-              <div>Frama Motion</div>
+              <div className="text-black Home  p-1 ">React</div>
+              <div className="Home">React Native</div>
+              <div className="Home">Tailwind</div>
+              <div className="Home">Material UI</div>
+              <div className="Home">Frama Motion</div>
             </Slider>
           </div>
         </div>
