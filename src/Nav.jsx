@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Nav() {
   return (
-    <div className="h-[10vh] w-[100vw] sticky to flex items-center justify-center gap-4 sm:gap-10 ">
+    <div className="h-[10vh] text-[10px] sm:text-[12px] w-[100vw] sticky to flex items-center justify-center gap-4 sm:gap-10 ">
       <Link to="/">
         <p className="nav">Home </p>
       </Link>
