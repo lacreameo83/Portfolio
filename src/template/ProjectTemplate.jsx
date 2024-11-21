@@ -2,7 +2,7 @@ import React from "react";
 
 function ProjectTemplate({ image, purpose, link, title }) {
   return (
-    <div className="bg-white w-[40vw]  lg:w-[20vw] h-[65vh] p-5 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+    <div className="bg-white   lg:w-[20vw] h-[65vh] p-5 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
       {/* Image Section */}
       <div className="h-[30vh] mb-4">
         <img
