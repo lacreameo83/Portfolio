@@ -13,7 +13,7 @@
 
 
 .nav {
-
+  
  
   
   color: #000; /* Text color */
@@ -69,27 +69,25 @@ background-color: rgba(255, 255, 255, 0.3);;
 
 /* Colors and initial positioning of each ball */
 .ball1 {
-  width: 200px;
-  height: 200px;
-  background-color: rgba(99, 102, 241, 0.8); /* Indigo */
-  top: 50px;
-  left: 50px;
+  
+  background-color: rgba(99, 102, 241, 0.8); 
+  
 }
 
 .ball2 {
-  width: 180px;
-  height: 180px;
+  /* width: 180px;
+  height: 180px; */
   background-color: rgba(168, 85, 247, 0.8); /* Purple */
-  top: 50px;
-  right: -50px;
+  /* top: 50px;
+  right: -50px; */
 }
 
 .ball3 {
-  width: 220px;
-  height: 220px;
+  /* width: 220px;
+  height: 220px; */
   background-color: rgba(236, 72, 153, 0.8); /* Pink */
-  bottom: -50px;
-  left: 50px;
+  /* bottom: -50px;
+  left: 50px; */
 }
 
 /* Animation for the floating effect */
@@ -98,12 +96,13 @@ background-color: rgba(255, 255, 255, 0.3);;
     transform: translate(0, 0);
   }
   50% {
-    transform: translate(50px, -30px);
+    transform: translate(5vw, -3vh); /* Use viewport units for responsiveness */
   }
   100% {
-    transform: translate(-30px, 50px);
+    transform: translate(-3vw, 5vh);
   }
 }
+
 .react-flow {
   cursor: default !important; /* Forces the arrow cursor */
 }
