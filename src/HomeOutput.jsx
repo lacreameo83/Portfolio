@@ -81,7 +81,7 @@ const settings = {
             src={image}
             alt="mypicture"
           />
-          <div className="h-[65vh] w-[32vw] rounded-full blur-sm opacity-30 bg-gradient-to-r from-pink-500 via-pink-100 to-pink-100 absolute"></div>
+          <div className="h-[23vh] w-[45vw]  sm:h-[55vh] sm:w-[65vw] lg:h-[65vh] lg:w-[33vw] rounded-full blur-sm opacity-30 bg-gradient-to-r from-pink-500 via-pink-100 to-pink-100 absolute"></div>
         </div>
       </div>
       <Projects />
