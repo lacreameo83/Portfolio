@@ -12,7 +12,7 @@ function HomeOutput() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     arrows: false,
     slidesToScroll: 1,
     autoplay: true,
@@ -43,23 +43,23 @@ function HomeOutput() {
   return (
     <div className="">
       {/* Hero Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-6 py-10 sm:px-20 sm:py-16 items-center">
-       <div className="flex justify-center relative">
+      <div className="grid h-[80vh] bg-black grid-cols-1 lg:grid-cols-2 gap-10 px-6 py-10 sm:px-20 sm:py-16 items-center">
+        <div className="flex justify-center relative">
           <img
             className="h-48 w-48 sm:h-72 sm:w-72 lg:h-80 lg:w-80 rounded-full object-cover shadow-lg relative z-10"
             src={image}
             alt="mypicture"
           />
-          <div className="absolute h-56 w-56 sm:h-80 sm:w-80 lg:h-96 lg:w-96 rounded-full blur-xl bg-gradient-to-r from-pink-500 via-pink-200 to-pink-100 opacity-50 z-0"></div>
+          <div className="absolute h-56 w-56 sm:h-80 sm:w-80 lg:h-76 lg:w-76 rounded-full blur-xl bg-gradient-to-r from-pink-500 via-pink-200 to-pink-100 opacity-50 z-0"></div>
         </div>
         <div className="text-center  lg:text-left space-y-4">
-          <p className="text-lg sm:text-2xl font-medium text-gray-700">
+          <p className="text-lg sm:text-2xl font-medium text-gray-300">
             Hi, I'm Osonwa Precious.
           </p>
-          <h1 className="text-3xl sm:text-5xl font-bold text-gray-800">
+          <h1 className="text-3xl sm:text-5xl font-bold text-gray-100">
             A Frontend Developer
           </h1>
-          <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+          <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
             As a skilled frontend developer with a proven track record of
             creating responsive, user-friendly applications using modern
             technologies like React, Tailwind CSS, and Redux, I excel at
@@ -67,21 +67,21 @@ function HomeOutput() {
             drive business success.
           </p>
           {/* Skills Slider */}
-          <div className="h-24  mt-6">
+          <div className="h-24 mt-6">
             <Slider {...settings}>
-              <div className="p-4 bg-white  shadow-lg rounded-lg text-center text-gray-800 transition-transform duration-300 transform hover:scale-105">
+              <div className="p-4    shadow-lg rounded-lg text-center text-gray-200 transition-transform duration-300 transform hover:scale-105 ">
                 React
               </div>
-              <div className="p-4 bg-white ml-1 shadow-lg rounded-lg text-center text-gray-800 transition-transform duration-300 transform hover:scale-105">
+              <div className="p-4 shadow-lg rounded-lg text-center text-gray-200 transition-transform duration-300 transform hover:scale-105 ">
                 React Native
               </div>
-              <div className="p-4 bg-white shadow-lg rounded-lg text-center text-gray-800 transition-transform duration-300 transform hover:scale-105">
+              <div className="p-4   shadow-lg rounded-lg text-center text-gray-200 transition-transform duration-300 transform  hover:scale-105 ">
                 Tailwind CSS
               </div>
-              <div className="p-4 bg-white shadow-lg rounded-lg text-center text-gray-800 transition-transform duration-300 transform hover:scale-105">
+              <div className="p-4 shadow-lg   rounded-lg text-center text-gray-200 transition-transform duration-300 transform hover:scale-105 ">
                 Material UI
               </div>
-              <div className="p-4 bg-white shadow-lg rounded-lg text-center text-gray-800 transition-transform duration-300 transform hover:scale-105">
+              <div className="p-4 shadow-lg   rounded-lg text-center text-gray-200 transition-transform duration-300 transform hover:scale-105 ">
                 Framer Motion
               </div>
             </Slider>
@@ -89,21 +89,20 @@ function HomeOutput() {
         </div>
 
         {/* Image Section */}
-       
       </div>
 
       {/* Projects Section */}
-      <section className="bg-white py-10">
+      <section className=" ">
         <ProjectSample />
       </section>
 
       {/* Skills Section */}
-      <section className="bg-gray-50 py-10">
+      <section className="">
         <Skills />
       </section>
 
       {/* Contact Form */}
-      <section className="bg-white py-10">
+      <section className="">
         <ContactForm />
       </section>
     </div>

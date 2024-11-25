@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Nav() {
   return (
-    <div className="h-[10vh] px-8 w-full sticky top-0 bg-white bg-opacity-90 backdrop-blur-lg shadow-sm flex items-center justify-between z-50">
+    <div className="h-[10vh] px-8 w-full sticky top-0  bg-opacity-90 backdrop-blur-lg shadow-sm flex items-center justify-between z-50">
       {/* Left Navigation Links */}
       <div className="flex items-center gap-2 sm:gap-10">
         <Link to="/">

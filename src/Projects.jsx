@@ -27,8 +27,10 @@ function Projects() {
   };
 
   return (
-    <div className="overflow-x-hidden  ">
-      <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">My projects</h2>
+    <div className="overflow-x-hidden py-4 bg-black  ">
+      <h2 className="text-3xl font-bold text-center text-gray-300 mt-2 mb-2">
+        My projects
+      </h2>
       <motion.section
         variants={containerVariants}
         initial="hidden"
@@ -71,7 +73,7 @@ function Projects() {
         <motion.div variants={childVariants}>
           <ProjectTemplate
             image={mycv}
-            purpose="To Display What i have done over the years."
+            purpose="Building my portfolio allows me to showcase my skills, creativity, and the practical projects I have developed, providing potential employers and clients with a clear understanding of my expertise and capabilities as a front-end developer."
             link="https://sun-energy.vercel.app/"
             title="My Porfolio"
           />

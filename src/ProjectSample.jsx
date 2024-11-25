@@ -26,13 +26,13 @@ function ProjectSample() {
   ];
 
   return (
-    <div className="p-10 ">
+    <div className="p-10 border-t bg-black ">
       {/* Section Header */}
       <div className="flex items-center justify-between mb-8">
-        <h2 className="text-3xl font-bold ">My Projects</h2>
+        <h2 className="text-3xl text-gray-300 font-bold ">My Projects</h2>
         <a
           href="#"
-          className="text-sm  underline hover:text-blue-200 transition duration-300"
+          className="text-sm text-gray-300 underline hover:text-blue-200 transition duration-300"
         >
           View More
         </a>
@@ -43,7 +43,7 @@ function ProjectSample() {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="p-6 bg-opacity-50 bg-white backdrop-blur-md rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
+            className="p-6  bg-white/90 backdrop-blur-md rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
           >
             <h3 className="text-xl font-semibold text-gray-800">
               {project.title}
@@ -63,7 +63,7 @@ function ProjectSample() {
 
       {/* View More Button */}
       <div className="flex justify-center mt-10">
-        <button className="px-6 py-3  text-lg bg-opacity-50 bg-white backdrop-blur-md rounded-full shadow-lg hover:bg-opacity-75 transition duration-300">
+        <button className="px-6 py-3  text-lg  bg-white/90 backdrop-blur-md rounded-full shadow-lg hover:bg-opacity-75 transition duration-300">
           View More Projects
         </button>
       </div>
