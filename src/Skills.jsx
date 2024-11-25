@@ -43,17 +43,17 @@ function Skills() {
         {skills.map((skill, index) => (
           <motion.div
             key={index}
-            className="p-4 rounded-lg shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 bg-white/90 backdrop-blur-lg"
+            className="p-4 rounded-lg shadow-md hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 bg-white/10 backdrop-blur-lg"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center justify-between space-x-3">
               <span className="text-4xl">{skill.icon}</span>
-              <h3 className="text-sm sm:text-xl font-semibold text-gray-700">
+              <h3 className="text-sm sm:text-xl font-semibold text-gray-300">
                 {skill.name}
               </h3>
             </div>
-            <p className="mt-2 text-sm text-gray-500">{skill.level}</p>
+          
           </motion.div>
         ))}
       </motion.div>

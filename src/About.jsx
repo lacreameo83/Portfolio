@@ -2,7 +2,7 @@ import React from "react";
 import image from "../src/assets/mypicture.png";
 function AboutMe() {
   return (
-    <div className="p-6 sm:p-10 py-10 sm:py-0 h-fit sm:h-[70vh]  border-gray-300">
+    <div className="p-6 sm:p-10 py-10 sm:py-0 h-fit sm:h-[76vh] flex items-center   border-gray-300">
       <div className="flex flex-col sm:flex-row items-center sm:items-start sm:space-x-8">
         {/* Optional Picture Section */}
         <div className="flex-shrink-0 mb-6 sm:mb-0">
