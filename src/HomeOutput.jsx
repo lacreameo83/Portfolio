@@ -1,90 +1,111 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import image from '../src/assets/mypicture.png'
-import Projects from "./Projects";
+import image from "../src/assets/mypicture.png";
+import ProjectSample from "./ProjectSample";
+import Skills from "./Skills";
+import ContactForm from "./ContactForm";
 
 function HomeOutput() {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    arrows: false,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
 
-const settings = {
-  dots: false,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 4,
-//   slidesToScroll: 4,
-  arrows: false,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 5000,
-  pauseOnHover: true,
-  initialSlide: 0,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        initialSlide: 2,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-      },
-    },
-  ],
-};
-
-    
   return (
-    <div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 m-8  sm:m-20">
-        <div>
-          <p className="text-[20px] text-center sm:text-start Home">
-            Hi Am Osonwa Precious.
+    <div className="">
+      {/* Hero Section */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-6 py-10 sm:px-20 sm:py-16 items-center">
+       <div className="flex justify-center relative">
+          <img
+            className="h-48 w-48 sm:h-72 sm:w-72 lg:h-80 lg:w-80 rounded-full object-cover shadow-lg relative z-10"
+            src={image}
+            alt="mypicture"
+          />
+          <div className="absolute h-56 w-56 sm:h-80 sm:w-80 lg:h-96 lg:w-96 rounded-full blur-xl bg-gradient-to-r from-pink-500 via-pink-200 to-pink-100 opacity-50 z-0"></div>
+        </div>
+        <div className="text-center  lg:text-left space-y-4">
+          <p className="text-lg sm:text-2xl font-medium text-gray-700">
+            Hi, I'm Osonwa Precious.
           </p>
-          <p className="sm:text-[60px] text-[30px] text-center sm:text-start Home ">
-            A Frontend Developer{" "}
-          </p>
-          <p className="text-[20px] text-pretty  Home2">
+          <h1 className="text-3xl sm:text-5xl font-bold text-gray-800">
+            A Frontend Developer
+          </h1>
+          <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
             As a skilled frontend developer with a proven track record of
             creating responsive, user-friendly applications using modern
             technologies like React, Tailwind CSS, and Redux, I excel at
             delivering innovative solutions that enhance user experiences and
             drive business success.
           </p>
-          <div className=" h-[10vh] mt-10   ">
+          {/* Skills Slider */}
+          <div className="h-24  mt-6">
             <Slider {...settings}>
-              <div className="text-black Home  p-1 ">React</div>
-              <div className="Home">React Native</div>
-              <div className="Home">Tailwind</div>
-              <div className="Home">Material UI</div>
-              <div className="Home">Frama Motion</div>
+              <div className="p-4 bg-white  shadow-lg rounded-lg text-center text-gray-800 transition-transform duration-300 transform hover:scale-105">
+                React
+              </div>
+              <div className="p-4 bg-white ml-1 shadow-lg rounded-lg text-center text-gray-800 transition-transform duration-300 transform hover:scale-105">
+                React Native
+              </div>
+              <div className="p-4 bg-white shadow-lg rounded-lg text-center text-gray-800 transition-transform duration-300 transform hover:scale-105">
+                Tailwind CSS
+              </div>
+              <div className="p-4 bg-white shadow-lg rounded-lg text-center text-gray-800 transition-transform duration-300 transform hover:scale-105">
+                Material UI
+              </div>
+              <div className="p-4 bg-white shadow-lg rounded-lg text-center text-gray-800 transition-transform duration-300 transform hover:scale-105">
+                Framer Motion
+              </div>
             </Slider>
           </div>
         </div>
-        <div className="flex items-center relative justify-center row-start-1 row-end-2  ">
-          <img
-            className=" h-[20vh] w-[40vw] sm:h-[50vh] sm:w-[60vw]   lg:h-[60vh] lg:w-[30vw] rounded-[100%] relative z-10 object-cover "
-            src={image}
-            alt="mypicture"
-          />
-          <div className="h-[23vh] w-[45vw]  sm:h-[55vh] sm:w-[65vw] lg:h-[65vh] lg:w-[33vw] rounded-full blur-sm opacity-30 bg-gradient-to-r from-pink-500 via-pink-100 to-pink-100 absolute"></div>
-        </div>
+
+        {/* Image Section */}
+       
       </div>
-      <Projects />
+
+      {/* Projects Section */}
+      <section className="bg-white py-10">
+        <ProjectSample />
+      </section>
+
+      {/* Skills Section */}
+      <section className="bg-gray-50 py-10">
+        <Skills />
+      </section>
+
+      {/* Contact Form */}
+      <section className="bg-white py-10">
+        <ContactForm />
+      </section>
     </div>
   );
 }
